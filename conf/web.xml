@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>SearchEngine</display-name>
+  <servlet>
+    <servlet-name>interfaceServlet</servlet-name>
+    <servlet-class>edu.upenn.cis455.SearchEngine.SearchInterface</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>interfaceServlet</servlet-name>
+    <url-pattern>/interface</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>pageRendererServlet</servlet-name>
+    <servlet-class>edu.upenn.cis455.SearchEngine.PageRenderer</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>pageRendererServlet</servlet-name>
+    <url-pattern>/results</url-pattern>
+  </servlet-mapping>
+</web-app>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Search Engine Home Page</title>
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  <style>
+
+  body, html {
+    height: 100%;
+    background-color: #FFF;
+    font: Cambria, Georgia, serif;
+  }
+
+  ul.nav li {
+    width: auto;
+    float: left;
+    color: white;
+  }
+
+  .item {
+    font-size: 14px;
+    color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+
+  .header-wrap {
+    width: 100%;
+    background: #4D4D4D;
+    position: fixed;
+    z-index: 999;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .content-wrap {
+    width: 100%;
+    padding: 32px 0 16px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .3);
+  }
+
+  .background-2 {
+    background: #F2F2F2
+  }
+
+  .searchblock {
+    position: relative;
+    margin-top: 30%;
+    margin-bottom: 10%;
+  }
+
+  #searchform {
+  	margin: auto;
+  	width: 60%;
+  	border: 2px solid #000000;
+  	border-radius: 5px;
+    background-color: #fff2f2;
+  	padding: 10px;
+  }
+
+  .search-input {
+  	color: black;
+    padding: 0.8vh;
+  	margin-top: 2vh;
+    margin-bottom: 2vh;
+  	min-width: 80%;
+  }
+
+/*  .footer-wrap {
+    width: 100%;
+    padding: 16px 0;
+  }*/
+  </style>
+</head>
+
+<body>
+
+<div class="header-wrap">
+  <div class="header">
+    <ul class = "nav clearfix">
+      <li class="item">About Us</li>
+      <li class="item">Project Description</li>
+    </ul>
+  </div>
+</div>
+
+<div class="content-wrap background-2">
+  <div id="searchblock"  class="searchblock">
+  	<h1  align = "center">Try your search here:</h1>
+
+    <form class="search" name="search_form" method="POST" id="searchform" action="results">
+    	<input class="search-input placeholder" type="text" value placeholder="Enter your query keywords..." name="searchquery" required>
+    	<input class = "btn" type="submit" name="submit" id="searchsubmit" value="Search!">
+      <p> %%REPLACE TERMS HERE%%</p>
+    </form>
+  </div>
+</div>
+
+<!-- <div class="footer-wrap"></div> -->
+
+</body>
+</html>
